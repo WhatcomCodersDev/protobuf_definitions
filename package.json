@@ -1,0 +1,16 @@
+{
+  "name": "leetcode-protos",
+  "version": "1.0.0",
+  "description": "Protobuf definitions for LeetCode challenges and user interactions",
+  "main": "index.js",
+  "scripts": {
+    "generate": "sh ./scripts/generate.sh"
+  },
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.5",
+    "grpc-tools": "^1.11.1"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}

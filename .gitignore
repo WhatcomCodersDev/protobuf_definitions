@@ -6,6 +6,11 @@ __pycache__/
 # C extensions
 *.so
 
+# protobuf generated files
+generated/
+generated/python/
+generated/javascript/
+
 # Distribution / packaging
 .Python
 build/
