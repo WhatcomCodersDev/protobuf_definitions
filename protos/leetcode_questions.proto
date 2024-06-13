@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+package Leetcode_Questions;
+
+service LeetcodeBotService {
+  rpc getProblem (ProblemRequest) return (ProblemResponse);
+  rpc SubmitProblem (SolutionRequest) return (SolutionResponse);
+}
+
+//Get Leetcode problem by difficulty
+message ProblemRequest {
+ string difficulty = 1;
+}
+
+message ProblemResponse {
+  string difficulty = 1;
+  int32 id = 2;
+  bool isInBlind50 = 3;
+  bool isInBlind75 = 4;
+  bool isInGrind75 = 5;
+  bool isInNeetcode = 6;
+  bool isInSeanPrasadList = 7;
+  string link = 8;
+  string name = 9;
+  string notes = 10;
+  repeated string tags = 11;
+}
+
+message SolutionRequest {
+  string user_id = 1;
+  string difficulty = 2;
+  string solution = 3;
+}
+ 
+message SolutionResponse{
+  bool success = 1;
+}
